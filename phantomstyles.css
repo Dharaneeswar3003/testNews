@@ -1,0 +1,905 @@
+
+.main-contact a {
+    color: #BB2C2C;
+    text-decoration: none;
+}
+
+.main-contact a:hover {
+    color:#CACACA;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.contact a {
+    color: #BB2C2C;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color:#CACACA;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.homeimage-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%; /* Full width for responsiveness */
+    height: 250px; /* Adjust height as needed */
+    background-image: url('homeimage.png'); /* Replace with your image */
+    background-size: cover; /* Ensures the image covers the container without distortion */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Calgary';
+    src: url('/Users/dharani/Desktop/Calgary_DEMO.ttf') format('truetype'); /* Update the path to your font file */
+}
+
+.text-overlay {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: calc(3vw + 1rem); /* Dynamic sizing based on viewport width */
+    position: absolute;
+    top: 50%; /* Center text vertically */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    color: white; /* Text color */
+    text-align: center;
+    letter-spacing: 0.15em; /* Increased spacing for better visibility */
+    line-height: 1.2; /* Adjust spacing between lines */
+    width: 90%; /* Limit the width to keep it readable */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better contrast */
+}
+
+.article-fullscreen {
+    text-align: left;
+    padding: 0px;
+}
+
+.article-fullscreen h1 {
+    
+    font-size: 30px;
+}
+
+.article-fullscreen img {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.article-writer,
+.article-credit,
+.article-editor {
+    color: #BB2C2C;
+}
+
+.articles-content {
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+.backbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+#back-button {
+    background-color: #000; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Kepler', serif;
+    cursor: pointer;
+    display: block;
+    text-align: center; /* Center the text inside the button */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+#back-button:hover {
+    background-color: #737373
+}
+
+
+.contact p {
+    font-size: 20px;
+    font-family: 'kepler-std', serif;
+    text-align: center;
+}
+
+.about h3 {
+    text-align: center;
+    font-weight: lighter;
+    color: #000;
+    font-size: 40px;
+    font-family: 'kepler-std', serif;
+}
+
+.about p {
+    font-size: 20px;
+    font-family: 'kepler-std', serif;
+}
+
+.allarticles h2 {
+    font-family: 'kepler-std', serif;
+    color: #000;
+
+}
+
+.team-member p2 {
+    color: #BB2C2C;
+}
+
+.article-title:hover {
+    color: #555; 
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: #fff;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: #fff;
+        gap: 2.5px;
+        width: 100%;
+        padding-top: 10px;
+        display: flex;
+        padding-bottom: 0;
+        background-color: #fff;
+    }
+
+    .logo {
+        padding-top: 0px;
+        font-family: 'Old English Text MT', serif;
+        font-size: 60px;
+        color: #8B0000;
+    }
+
+    .logo img {
+        padding-top: 5px;
+        height: auto;
+        width: 90%;
+        padding-bottom: 10px;
+    }
+
+    #desktop-menu {
+        display: none; /* Hidden by default */
+    }
+
+    #mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    /* Navigation links */
+    #mobile-menu ul {
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #mobile-menu ul li {
+        margin-bottom: 15px;
+    }
+
+    #mobile-menu ul li a {
+        text-decoration: none;
+        font-family: 'Kepler', serif;
+        color: #000;
+        font-size: 24px;
+    }
+
+    #mobile-menu ul li a:hover {
+        color: #CACACA;
+    }
+    #mobile-menu ul li a:active {
+        color: #BB2C2C;
+    }
+
+#close-button {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+#close-button:hover {
+    color: #BB2C2C;
+}
+
+    .hamburger {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: block;
+        margin-left: 10px;
+    }
+
+    .hamburger img {
+        padding-top: 5px;
+        width: auto;
+        height: 50px;
+    }
+
+    /* Mobile Menu visibility */
+    #mobile-menu.hidden {
+        display: none;
+    }
+
+    #mobile-menu.visible {
+        display: flex; /* Or whatever you want */
+    }
+
+    footer {
+        background-color: #000;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    .footer-container {
+        max-width: 100%; /* Ensure footer doesn't exceed viewport width */
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 15px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center all items horizontally */
+        text-align: center;  /* Center text for all content inside footer */
+    }
+
+    .footer-logo {
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    .social-icons {
+        padding-bottom: 20px;
+        padding-top: 15px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center; /* Center social icons */
+    }
+
+    .social-icons img {
+        width: 40px;
+    }
+
+    .footer-about {
+        font-family: 'Kepler', serif;
+        text-align: center; /* Center align text */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align content horizontally */
+        justify-content: center; /* Center align content vertically */
+        padding: 0; /* Remove any padding that causes offset */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer-about h2 {
+        padding-top: 10px;
+        font-size: 22px;
+        color: #BB2C2C;
+        margin-bottom: 10px;
+    }
+
+    .footer-about p {
+        padding-top: 10px;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .sitemap {
+        font-family: 'Kepler', serif;
+        text-align: center; /* Center align text */
+        padding: 0; /* Remove padding */
+    }
+
+    .sitemap h3 {
+        font-size: 22px;
+        color: #BB2C2C;
+        margin-bottom: 10px;
+        padding-bottom: 13px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .sitemap ul {
+        list-style: none;
+        padding: 0; /* Remove padding */
+    }
+
+    .sitemap ul li {
+        margin-bottom: 5px;
+        padding: 2px;
+    }
+
+    .sitemap ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .sitemap ul li a.active {
+        color: #BB2C2C;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 15px;
+        color: #BB2C2C;
+        margin-top: 10px;
+    }
+
+    .main {
+        padding-top: 30px;
+        margin-left: 30px;
+        padding-left: 10px;
+        margin-right: 30px;
+    }
+
+    .latest hr,
+    .features hr {
+        color: #000;
+    }
+
+    .school-news h1,
+    .contact h2,
+    .about h4,
+    .local-news h1,
+    .features h1,
+    .allarticles h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'kepler-std', serif;
+        color: #BB2C2C;
+        margin-bottom: 15px;
+    }
+
+    .about h3{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'kepler-std', serif;
+        color: #000;
+        margin-bottom: 10px;
+
+    }
+
+    .main-contact {
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .main-contact h2 {
+        margin-left: 20px;
+        font-weight: lighter;
+        font-size: 35px;
+        text-align: center;
+        color: #BB2C2C;
+        font-family: 'kepler-std', serif;
+        padding-bottom: 0;
+    }
+
+    .main-contact p {
+        font-weight: lighter;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'kepler-std', serif;
+    }
+
+    .more-articles {
+        background-color: #000; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-family: 'Kepler', serif;
+        cursor: pointer;
+        margin: 20px auto;
+        display: block;
+        text-align: center; /* Center the text inside the button */
+        border-radius: 5px; /* Optional: Rounded corners */
+    }
+    
+    .more-articles:hover {
+        background-color: #737373; /* Darker color on hover */
+    }
+
+    .about h2 {
+        margin-left: 20px;
+        font-weight: lighter;
+        font-size: 35px;
+        text-align: center;
+        color: #BB2C2C;
+        font-family: 'kepler-std', serif;
+        padding-bottom: 0;
+    }
+
+    .allarticles h2 {
+        margin-left: 0px;
+        font-weight: lighter;
+        font-size: 35px;
+        text-align: center;
+        color: #000;
+        font-family: 'kepler-std', serif;
+        padding-bottom: 0;
+    }
+
+    .contact p {
+        font-size: 20px;
+        font-family: 'kepler-std', serif;
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 20px;
+        font-family: 'kepler-std', serif;
+    }
+
+    .team-member h2 {
+        padding-right: 30px;
+        font-size: 20px;
+        color: #BB2C2C;
+    }
+
+    .team-member p {
+        font-size: 20px;
+    }
+
+    .team-member h3 {
+        font-size: 25px;
+    }
+
+    .team-member img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #latest-news {
+        padding: 0px;
+    }
+    
+    #articles-container {
+        width: 100%;
+    }
+    
+    .article {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Style to remove underline and match color */
+a {
+    text-decoration: none;
+    color: inherit; /* Match the surrounding text color */
+    cursor: pointer; /* Indicate the text is clickable */
+}
+
+/* Optional: Add hover effect for better UX */
+a:hover {
+    color: #555; /* Slightly darker to indicate a link */
+}
+
+    
+    .article-image {
+        margin-top: 10px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .article-category {
+        font-weight: normal;
+        margin-top: 15px;
+        color: #BB2C2C;
+        font-size: 15px;
+
+    }
+
+    .article-title {
+        font-weight: bolder;
+        padding-bottom: 5px;
+        font-size: 22px;
+        color: #000;
+        font-family: 'kepler-std', serif;
+    }
+
+    .article-description {
+        margin-top: 5px;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center; /* This centers the image horizontally */
+        margin-bottom: 10px;
+    }
+
+    .home-image {
+        width: 100%;
+        height: 225px
+    }
+}
+
+@media screen and (min-width: 1001px) {
+
+    /*Header, Title, Nav */
+
+    header {
+        text-align: center;
+        padding: 20px 0;
+        padding-top: 0px;
+        background-color: #fff;
+        width: 100%;
+        margin: 0;
+    }
+
+    .main {
+        padding-top: 30px;
+        margin: 0 150px;
+        
+    }
+
+    .logo img {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        height: auto;
+        width: 34%;
+    }
+
+    .hamburger {
+        display:none;
+    }
+
+    .close-button {
+        display: none;
+    }
+
+#desktop-menu {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 10px 0;
+}
+
+#desktop-menu ul {
+    display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 10px 0;
+        border-top: 1px solid #BB2C2C;
+        border-bottom: 1px solid #BB2C2C;
+}
+
+#desktop-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 0 45px;
+}
+
+/* Mobile Navigation - Hidden on Large Screens */
+#mobile-menu {
+    display: none; /* Hidden by default */
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+    
+#desktop-menu ul li a {
+        text-decoration: none;
+        font-family: 'Kepler', serif;
+        color: #000;
+        font-size: 15px;
+    }
+    
+    #desktop-menuul li a:hover {
+        color: #CACACA;
+    
+    }
+    
+    #desktop-menu ul li a.active {
+        color: #BB2C2C
+    }
+
+    .latest h2,
+    .features h2 {
+        text-align: left;
+        font-weight: 0;
+        font-size: 30px;
+        font-family: 'kepler-std', serif;
+        margin-bottom: 0; /* Remove gap between heading and horizontal line */
+    }
+
+    footer {
+        background-color: #000;
+        padding: 40px 0;
+    }
+
+
+    .footer-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .footer-logo {
+        align-items: center;
+        padding-top: 75px;
+        flex: 1;
+    }
+
+    .social-icons {
+        padding-top: 15px;
+        display: flex;
+        gap: 15px;
+        padding-left: 80px;
+    }
+
+    .social-icons img {
+        width: 35px;
+    }
+
+    .footer-about {
+        flex: 3; /* Adjust flex to take more space and center within */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about h2 {
+        font-family: 'kepler-std', serif;
+        font-size: 22px;
+        color: #BB2C2C;
+        margin-bottom: 10px;
+    }
+
+    .footer-about p {
+        font-family: 'kepler-std', serif;
+        padding-top: 15px;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .sitemap {
+        flex: 1;
+        text-align: center;
+    }
+
+    .sitemap h3 {
+        padding-left: 25px;
+        font-family: 'kepler-std', serif;
+        font-size: 22px;
+        color: #BB2C2C;
+        margin-bottom: 10px;
+        padding-bottom: 13px;
+    }
+
+    .sitemap ul {
+        list-style: none;
+    }
+
+    .sitemap ul li {
+        margin-bottom: 5px;
+        padding: 2px;
+    }
+
+    .sitemap ul li a {
+        font-family: 'kepler-std', serif;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .copyright {
+        padding-left: 50px;
+        text-align: center;
+        font-size: 14px;
+        color: #BB2C2C;
+        margin-top: 20px;
+    }
+
+    .main-contact {
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .main-contact h2 {
+        margin-left: 20px;
+        font-weight: lighter;
+        font-size: 35px;
+        text-align: center;
+        color: #BB2C2C;
+        font-family: 'kepler-std', serif;
+        padding-bottom: 0;
+    }
+
+    .main-contact p {
+        font-weight: lighter;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'kepler-std', serif;
+    }
+
+    .more-articles {
+        background-color: #000; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-family: 'Kepler', serif;
+        cursor: pointer;
+        margin: 20px auto;
+        display: block;
+        text-align: center; /* Center the text inside the button */
+        border-radius: 5px; /* Optional: Rounded corners */
+    }
+    
+    .more-articles:hover {
+        background-color: #737373; /* Darker color on hover */
+    }
+
+        .team-member {
+            display: block;
+            flex-direction: row; /* Stack members vertically */
+            gap: 20px; /* Space between each member */
+        }
+    
+        .member-info {
+            align-items: center; /* Align items to the center vertically */
+            gap: 20px; /* Space between image and description */
+            margin-bottom: 20px;
+        }
+    
+        .member-info img {
+            width: 100px;
+            height: auto;
+        }
+    
+        /* Additional styles for text alignment */
+        .member-info p, .member-info p2 {
+            margin: 0;
+        }
+    
+        hr {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        #latest-news {
+            padding: 0px;
+        }
+        
+        .article {
+            display: block;
+            flex-direction: row;
+            padding: 0px;
+            border-bottom: 1px solid #ccc;
+        }
+    
+        /* Style to remove underline and match color */
+    a {
+        text-decoration: none;
+        color: inherit; /* Match the surrounding text color */
+        cursor: pointer; /* Indicate the text is clickable */
+    }
+    
+    /* Optional: Add hover effect for better UX */
+    a:hover {
+        color: #555; /* Slightly darker to indicate a link */
+    }
+    
+        
+    .article {
+        display: flex; /* Use flex layout for the image and text side-by-side */
+        flex-direction: row;
+        align-items: center; /* Center align items vertically */
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .article-image {
+        width: 100%; /* Set width for the image */
+        height: 200px; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover any overflow */
+        margin-right: 20px; /* Space between image and text */
+    }
+
+    .article-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-title {
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-size: 30px;
+        color: #000;
+        font-family: 'kepler-std', serif;
+    }
+
+    .article-category {
+        padding-bottom: 10px;
+        font-weight: normal;
+        color: #BB2C2C;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .article-description {
+        font-size: 20px;
+        color: #333;
+        margin-top: 5px;
+    }
+
+    
+        .home-image {
+            width: 100%;
+            height: auto
+        }
+
+        .school-news h1,
+        .contact h2,
+        .about h3,
+        .local-news h1,
+        .features h1,
+        .allarticles h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'kepler-std', serif;
+            color: #BB2C2C;
+            margin-bottom: 15px;
+        }
+        
+}
